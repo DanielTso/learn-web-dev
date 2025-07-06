@@ -4,19 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IDE Setup Guide</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a href="index.html" class="logo">DevBlog</a>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pathway.html">Pathway</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="ide-setup.html">IDE Setup</a></li>
-            </ul>
+            <a class="navbar-brand" href="index.html"><img src="images/devblog_logo.jpg" alt="DevBlog Logo" style="height: 70px;"><span class="ms-2 d-none d-sm-inline">Code. Create. Conquer.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pathway.html">Pathway</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="ide-setup.html">IDE Setup</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -82,10 +100,12 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 DevBlog. All rights reserved. This site is for educational purposes only.</p>
+            <p>&copy; 2025 DevJourney. All Rights Reserved.</p>
+            <p class="small">Disclaimer: This website is for educational purposes only and does not provide professional advice.</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
