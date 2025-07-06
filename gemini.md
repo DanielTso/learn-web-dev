@@ -33,21 +33,16 @@ As this is a static website, there are no build or development server commands. 
   - **Sidebar Cards:**
     - "Project-Based Resources" card (e.g., The Odin Project, freeCodeCamp).
     - "Recommended Tools" card (e.g., VS Code, Browser Dev Tools, Git, Node.js).
+- **Tutorial Page:** Provides a guide to setting up VS Code for front-end development, including recommended extensions and installation guides. It features a main content area and a sidebar with links to extensions and OS-specific VS Code installation guides.
 
 ## Global Elements
-- **Navigation Bar:** Consistent across all pages, includes Home, About, and Contact links.
-- **Footer:** Includes copyright and a disclaimer for educational purposes.
-
-## Content Structure
-- **Pathway Page:** Provides a structured roadmap for learning web development, covering various stages from fundamentals to advanced topics.
-
-## Global Elements
-- **Navigation Bar:** Consistent across all pages, includes Home, Pathway, About, and Contact links.
+- **Navigation Bar:** Consistent across all pages, includes Home, Pathway, Tutorial, About, and Contact links.
 - **Footer:** Includes copyright and a disclaimer for educational purposes.
 
 ## Important File Locations
 - Main HTML file: `index.html`
 - Pathway Page: `pathway.html`
+- Tutorial Page: `tutorial.html`
 - About Page: `about.html`
 - Contact Page: `contact.html`
 - Stylesheet: `css/style.css`
