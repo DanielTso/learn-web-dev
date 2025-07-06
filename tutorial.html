@@ -38,64 +38,101 @@
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container">
-            <h1>Setting Up Your IDE for Web Development</h1>
-            <p>A beginner's guide to configuring VS Code for front-end development.</p>
-        </div>
-    </header>
-
     <main class="container content-section">
-        <section class="main-content">
-            <h2>Why VS Code?</h2>
-            <p>Visual Studio Code (VS Code) is a free, open-source, and highly customizable code editor developed by Microsoft. It's incredibly popular among web developers due to its extensive features, large extension marketplace, and excellent performance.</p>
+        <div class="row">
+            <!-- Main Tutorial Content -->
+            <div class="col-md-8">
+                <h1>Setting Up Your IDE for Web Development</h1>
+                <p>A beginner's guide to configuring VS Code for front-end development.</p>
 
-            <h2>Installation</h2>
-            <p>Download and install VS Code from the official website: <a href="https://code.visualstudio.com/" target="_blank">code.visualstudio.com</a>. Follow the installation instructions for your operating system.</p>
+                <h2>Why VS Code?</h2>
+                <p>Visual Studio Code (VS Code) is a free, open-source, and highly customizable code editor developed by Microsoft. It's incredibly popular among web developers due to its extensive features, large extension marketplace, and excellent performance.</p>
 
-            <h2>Recommended Extensions for Front-End Development</h2>
-            <p>Extensions enhance VS Code's functionality, making your development workflow smoother and more efficient. Here are some essential extensions:</p>
+                <h2>Installation</h2>
+                <p>Download and install VS Code from the official website: <a href="https://code.visualstudio.com/" target="_blank">code.visualstudio.com</a>. Follow the installation instructions for your operating system.</p>
 
-            <h3>1. Live Server</h3>
-            <p><strong>Purpose:</strong> Launches a local development server with live reload feature for static & dynamic pages.</p>
-            <p><strong>Why it's useful:</strong> Automatically refreshes your browser every time you save changes to your HTML, CSS, or JavaScript files, saving you from manually reloading the page.</p>
+                <h2>Recommended Extensions for Front-End Development</h2>
+                <p>Extensions enhance VS Code's functionality, making your development workflow smoother and more efficient. Here are some essential extensions:</p>
 
-            <h3>2. Prettier - Code formatter</h3>
-            <p><strong>Purpose:</strong> An opinionated code formatter that enforces a consistent style by parsing your code and re-printing it with its own rules.</p>
-            <p><strong>Why it's useful:</strong> Keeps your code clean, readable, and consistent across your projects, especially when working in teams.</p>
+                <h3>1. Live Server</h3>
+                <p><strong>Purpose:</strong> Launches a local development server with live reload feature for static & dynamic pages.</p>
+                <p><strong>Why it's useful:</strong> Automatically refreshes your browser every time you save changes to your HTML, CSS, or JavaScript files, saving you from manually reloading the page.</p>
 
-            <h3>3. ESLint</h3>
-            <p><strong>Purpose:</strong> Integrates ESLint into VS Code, providing on-the-fly linting and fixing for JavaScript and TypeScript code.</p>
-            <p><strong>Why it's useful:</strong> Helps you write error-free and style-consistent JavaScript by highlighting potential issues and suggesting fixes.</p>
+                <h3>2. Prettier - Code formatter</h3>
+                <p><strong>Purpose:</strong> An opinionated code formatter that enforces a consistent style by parsing your code and re-printing it with its own rules.</p>
+                <p><strong>Why it's useful:</strong> Keeps your code clean, readable, and consistent across your projects, especially when working in teams.</p>
 
-            <h3>4. Auto Rename Tag</h3>
-            <p><strong>Purpose:</strong> Automatically renames the paired HTML/XML tag when you change one of them.</p>
-            <p><strong>Why it's useful:</strong> Speeds up HTML editing by ensuring your opening and closing tags always match.</p>
+                <h3>3. ESLint</h3>
+                <p><strong>Purpose:</strong> Integrates ESLint into VS Code, providing on-the-fly linting and fixing for JavaScript and TypeScript code.</p>
+                <p><strong>Why it's useful:</strong> Helps you write error-free and style-consistent JavaScript by highlighting potential issues and suggesting fixes.</p>
 
-            <h3>5. CSS Peek</h3>
-            <p><strong>Purpose:</strong> Allows you to peek at CSS definitions from your HTML files, or quickly jump to them.</p>
-            <p><strong>Why it's useful:</strong> Improves navigation between your HTML and CSS files, making it easier to understand and modify styles.</p>
+                <h3>4. Auto Rename Tag</h3>
+                <p><strong>Purpose:</strong> Automatically renames the paired HTML/XML tag when you change one of them.</p>
+                <p><strong>Why it's useful:</strong> Speeds up HTML editing by ensuring your opening and closing tags always match.</p>
 
-            <h3>6. HTML CSS Support</h3>
-            <p><strong>Purpose:</strong> Provides comprehensive HTML and CSS autocompletion, including class and ID suggestions from your linked stylesheets.</p>
-            <p><strong>Why it's useful:</strong> Reduces typing and helps prevent typos by suggesting relevant CSS classes and IDs as you type in HTML.</p>
+                <h3>5. CSS Peek</h3>
+                <p><strong>Purpose:</strong> Allows you to peek at CSS definitions from your HTML files, or quickly jump to them.</p>
+                <p><strong>Why it's useful:</strong> Improves navigation between your HTML and CSS files, making it easier to understand and modify styles.</p>
 
-            <h3>7. JavaScript (ES6) code snippets</h3>
-            <p><strong>Purpose:</strong> Provides ES6 syntax snippets for JavaScript, TypeScript, HTML, React, and Vue.</p>
-            <p><strong>Why it's useful:</strong> Speeds up coding by providing common code structures and functions with just a few keystrokes.</p>
+                <h3>6. HTML CSS Support</h3>
+                <p><strong>Purpose:</strong> Provides comprehensive HTML and CSS autocompletion, including class and ID suggestions from your linked stylesheets.</p>
+                <p><strong>Why it's useful:</strong> Reduces typing and helps prevent typos by suggesting relevant CSS classes and IDs as you type in HTML.</p>
 
-            <h2>Configuring VS Code Settings</h2>
-            <p>You can customize VS Code's behavior through its settings. Go to `File > Preferences > Settings` (or `Code > Preferences > Settings` on macOS).</p>
-            <p>Some recommended settings:</p>
-            <ul>
-                <li><strong>Format On Save:</strong> Enable this to automatically format your code with Prettier every time you save a file.</li>
-                <li><strong>Default Formatter:</strong> Set Prettier as your default formatter for HTML, CSS, and JavaScript.</li>
-                <li><strong>Auto Save:</strong> Set to `onFocusChange` or `afterDelay` to automatically save your files.</li>
-            </ul>
+                <h3>7. JavaScript (ES6) code snippets</h3>
+                <p><strong>Purpose:</strong> Provides ES6 syntax snippets for JavaScript, TypeScript, HTML, React, and Vue.</p>
+                <p><strong>Why it's useful:</strong> Speeds up coding by providing common code structures and functions with just a few keystrokes.</p>
 
-            <h2>Conclusion</h2>
-            <p>With VS Code installed and these essential extensions configured, you'll have a powerful and efficient development environment ready for building amazing web projects. Happy coding!</p>
-        </section>
+                <h2>Configuring VS Code Settings</h2>
+                <p>You can customize VS Code's behavior through its settings. Go to `File > Preferences > Settings` (or `Code > Preferences > Settings` on macOS).</p>
+                <p>Some recommended settings:</p>
+                <ul>
+                    <li><strong>Format On Save:</strong> Enable this to automatically format your code with Prettier every time you save a file.</li>
+                    <li><strong>Default Formatter:</strong> Set Prettier as your default formatter for HTML, CSS, and JavaScript.</li>
+                    <li><strong>Auto Save:</strong> Set to `onFocusChange` or `afterDelay` to automatically save your files.</li>
+                </ul>
+
+                <h2>Conclusion</h2>
+                <p>With VS Code installed and these essential extensions configured, you'll have a powerful and efficient development environment ready for building amazing web projects. Happy coding!</p>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <div class="card bg-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Recommended VS Code Extensions</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank">Live Server</a></li>
+                            <li><a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank">Prettier - Code formatter</a></li>
+                            <li><a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank">ESLint</a></li>
+                            <li><a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag" target="_blank">Auto Rename Tag</a></li>
+                            <li><a href="https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek" target="_blank">CSS Peek</a></li>
+                            <li><a href="https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css" target="_blank">HTML CSS Support</a></li>
+                            <li><a href="https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets" target="_blank">JavaScript (ES6) code snippets</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Project-Based Resources</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></li>
+                            <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Recommended Tools</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://code.visualstudio.com/" target="_blank">VS Code (Code Editor)</a></li>
+                            <li><a href="https://developer.chrome.com/docs/devtools/" target="_blank">Browser Developer Tools</a></li>
+                            <li><a href="https://git-scm.com/downloads" target="_blank">Git (Version Control)</a></li>
+                            <li><a href="https://nodejs.org/en/download/" target="_blank">Node.js (for npm/package management)</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
