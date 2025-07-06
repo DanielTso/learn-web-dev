@@ -24,6 +24,9 @@ As this is a static website, there are no build or development server commands. 
 
 ## Content Structure
 - **Blog Post Pages:** Each post features a main content area (8 columns) and a sidebar (4 columns) for additional resources.
+  - **HTML Blog Post:** Expanded content with deeper explanations, practical code examples, introduction to semantic HTML, and a wider range of external resources.
+  - **CSS Blog Post:** Expanded content covering selectors, box model, Flexbox, Grid, and common properties, with practical examples and resources.
+  - **JavaScript Blog Post:** Expanded content on variables, data types, functions, DOM manipulation, and control flow, with practical examples and resources.
 
 ## Global Elements
 - **Navigation Bar:** Consistent across all pages, includes Home, About, and Contact links.
@@ -31,5 +34,7 @@ As this is a static website, there are no build or development server commands. 
 
 ## Important File Locations
 - Main HTML file: `index.html`
+- About Page: `about.html`
+- Contact Page: `contact.html`
 - Stylesheet: `css/style.css`
 - JavaScript: `js/script.js`

@@ -21,10 +21,10 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -39,37 +39,89 @@
                 <h1>The Power of CSS: Styling Your Web</h1>
                 <p class="lead">CSS (Cascading Style Sheets) is the language we use to style an HTML document. It describes how HTML elements should be displayed on screen, paper, or in other media. CSS saves a lot of work because it can control the layout of multiple web pages all at once.</p>
                 
-                <h2>Key Concepts for Beginners</h2>
-                
-                <h3>1. Selectors, Properties, and Values</h3>
-                <ul>
-                    <li><strong>Selectors:</strong> Used to "find" (or select) the HTML elements you want to style. Examples: <code>p</code> (element selector), <code>.my-class</code> (class selector), <code>#my-id</code> (ID selector).</li>
-                    <li><strong>Properties:</strong> The stylistic aspects you want to change for a selected element (e.g., <code>color</code>, <code>font-size</code>, <code>margin</code>, <code>padding</code>).</li>
-                    <li><strong>Values:</strong> The specific setting for a property (e.g., <code>blue</code> for <code>color</code>, <code>16px</code> for <code>font-size</code>).</li>
-                </ul>
-
                 <div class="embed-responsive embed-responsive-16by9 mb-4">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/Z4pCqK-V_Wo?si=KQiTG8SJ2R3id7VR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="embed-responsive-item"></iframe>
                 </div>
 
-                <h3>2. The Box Model</h3>
-                <p>Every HTML element can be considered a box. In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
+                <h2>Key Concepts for Beginners</h2>
+                
+                <h3>1. Selectors, Properties, and Values: The Core of CSS</h3>
+                <p>CSS rules are made up of selectors and declaration blocks. A selector points to the HTML element you want to style. The declaration block contains one or more declarations separated by semicolons, and each declaration includes a CSS property name and a value, separated by a colon.</p>
+                <ul>
+                    <li><strong>Selectors:</strong> Used to "find" (or select) the HTML elements you want to style.
+                        <ul>
+                            <li><code>element</code> (e.g., <code>p</code>, <code>h1</code>): Selects all instances of an HTML element.</li>
+                            <li><code>.class</code> (e.g., <code>.my-class</code>): Selects elements with a specific class attribute.</li>
+                            <li><code>#id</code> (e.g., <code>#my-id</code>): Selects a unique element with a specific ID attribute.</li>
+                            <li><code>element, element</code> (e.g., <code>h1, h2</code>): Groups multiple selectors.</li>
+                            <li><code>element element</code> (e.g., <code>div p</code>): Descendant selector, selects <code>&lt;p&gt;</code> elements inside <code>&lt;div&gt;</code>.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Properties:</strong> The stylistic aspect you want to change for a selected element (e.g., <code>color</code>, <code>font-size</code>, <code>margin</code>, <code>padding</code>, <code>background-color</code>).</li>
+                    <li><strong>Values:</strong> The specific setting for a property (e.g., <code>blue</code> for <code>color</code>, <code>16px</code> for <code>font-size</code>, <code>#FF0000</code> for <code>background-color</code>).</li>
+                </ul>
+                <p><strong>Example:</strong></p>
+                <pre><code>p {
+    color: blue;
+    font-size: 16px;
+}
+
+.my-class {
+    background-color: lightgray;
+}</code></pre>
+
+                <h3>2. The Box Model: Understanding Element Dimensions</h3>
+                <p>Every HTML element can be considered a box. The CSS box model is essentially a box that wraps around every HTML element, and it consists of margins, borders, padding, and the actual content.</p>
+                <p>Understanding the box model is crucial for controlling the layout and spacing of elements on your webpage.</p>
                 <ul>
                     <li><strong>Content:</strong> The actual content of the box, where text and images appear.</li>
-                    <li><strong>Padding:</strong> Clears an area around the content. It is transparent.</li>
-                    <li><strong>Border:</strong> A border that goes around the padding and content.</li>
-                    <li><strong>Margin:</strong> Clears an area outside the border. It is transparent.</li>
+                    <li><strong>Padding:</strong> Clears an area around the content. It is transparent and increases the size of the element.</li>
+                    <li><strong>Border:</strong> A border that goes around the padding and content. You can style its width, style (solid, dashed, etc.), and color.</li>
+                    <li><strong>Margin:</strong> Clears an area outside the border. It is transparent and creates space between elements.</li>
                 </ul>
+                <p><strong>Visual Representation:</strong></p>
+                <pre><code>+-----------------------+
+|        Margin         |
+|  +-------------------+  |
+|  |      Border       |  |
+|  |  +---------------+  |  |
+|  |  |    Padding    |  |  |
+|  |  |  +---------+  |  |  |
+|  |  |  | Content |  |  |  |
+|  |  |  +---------+  |  |  |
+|  |  +---------------+  |  |
+|  +-------------------+  |
++-----------------------+</code></pre>
 
-                <h3>3. Basic CSS Properties</h3>
+                <h3>3. CSS Layouts: Flexbox and Grid (Modern Approaches)</h3>
+                <p>While older methods like floats were used for layout, modern CSS offers powerful tools like Flexbox and Grid for creating responsive and complex layouts with ease.</p>
                 <ul>
-                    <li><strong>Text Styling:</strong> <code>font-family</code>, <code>font-size</code>, <code>color</code>, <code>text-align</code>.</li>
-                    <li><strong>Box Model:</strong> <code>width</code>, <code>height</code>, <code>padding</code>, <code>margin</code>, <code>border</code>.</li>
-                    <li><strong>Backgrounds:</strong> <code>background-color</code>, <code>background-image</code>.</li>
-                    <li><strong>Layout:</strong> <code>display</code> (e.g., <code>block</code>, <code>inline</code>, <code>flex</code>, <code>grid</code>), <code>position</code>.</li>
+                    <li><strong>Flexbox (Flexible Box Layout):</strong> A one-dimensional layout method for arranging items in a single row or a single column. It's great for distributing space among items in an interface and aligning them.</li>
+                    <li><strong>CSS Grid Layout:</strong> A two-dimensional layout system for the web. It allows you to arrange content into rows and columns, making it ideal for designing entire page layouts.</li>
+                </ul>
+                <p><strong>Example (Flexbox):</strong></p>
+                <pre><code>.container {
+    display: flex;
+    justify-content: space-around; /* Distributes items evenly */
+    align-items: center; /* Aligns items vertically */
+}</code></pre>
+
+                <h3>4. Basic CSS Properties You'll Use Constantly</h3>
+                <ul>
+                    <li><strong>Text Styling:</strong> <code>font-family</code>, <code>font-size</code>, <code>color</code>, <code>text-align</code>, <code>line-height</code>, <code>font-weight</code>.</li>
+                    <li><strong>Box Model:</strong> <code>width</code>, <code>height</code>, <code>padding</code>, <code>margin</code>, <code>border</code>, <code>box-sizing</code>.</li>
+                    <li><strong>Backgrounds:</strong> <code>background-color</code>, <code>background-image</code>, <code>background-repeat</code>, <code>background-size</code>.</li>
+                    <li><strong>Layout & Positioning:</strong> <code>display</code> (e.g., <code>block</code>, <code>inline</code>, <code>inline-block</code>, <code>flex</code>, <code>grid</code>), <code>position</code> (<code>static</code>, <code>relative</code>, <code>absolute</code>, <code>fixed</code>, <code>sticky</code>), <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code>.</li>
+                    <li><strong>Visual Effects:</strong> <code>opacity</code>, <code>box-shadow</code>, <code>text-shadow</code>, <code>border-radius</code>.</li>
                 </ul>
 
-                <a href="index.html" class="btn btn-primary mt-4">Back to Home</a>
+                <div class="d-flex justify-content-between mt-4">
+                    <a href="post-html.html" class="btn btn-primary">&larr; Previous: HTML</a>
+                    <a href="post-js.html" class="btn btn-primary">Next: JavaScript &rarr;</a>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="index.html" class="btn btn-primary">Back to Home</a>
+                </div>
             </div>
 
             <!-- Sidebar -->
@@ -78,9 +130,32 @@
                     <div class="card-body">
                         <h5 class="card-title">Additional CSS Resources</h5>
                         <ul class="list-unstyled">
-                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs: CSS</a></li>
-                            <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools CSS Tutorial</a></li>
-                            <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs: CSS (Official Documentation)</a></li>
+                            <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools CSS Tutorial (Beginner-Friendly)</a></li>
+                            <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks (Articles & Guides)</a></li>
+                            <li><a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy (Interactive Game)</a></li>
+                            <li><a href="https://cssgridgarden.com/" target="_blank">CSS Grid Garden (Interactive Game)</a></li>
+                            <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/basic-css/" target="_blank">freeCodeCamp: Basic CSS</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Project-Based Resources</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></li>
+                            <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Recommended Tools</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://code.visualstudio.com/" target="_blank">VS Code (Code Editor)</a></li>
+                            <li><a href="https://developer.chrome.com/docs/devtools/" target="_blank">Browser Developer Tools</a></li>
+                            <li><a href="https://git-scm.com/downloads" target="_blank">Git (Version Control)</a></li>
+                            <li><a href="https://nodejs.org/en/download/" target="_blank">Node.js (for npm/package management)</a></li>
                         </ul>
                     </div>
                 </div>

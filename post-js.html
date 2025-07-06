@@ -21,10 +21,10 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -37,43 +37,123 @@
             <!-- Main Blog Content -->
             <div class="col-md-8">
                 <h1>First Steps in JavaScript: Adding Interactivity</h1>
-                <p class="lead">JavaScript (JS) is a powerful programming language that enables you to create dynamically interacting websites. It allows you to implement complex features on web pages, making them more engaging and responsive to user actions.</p>
+                <p class="lead">JavaScript (JS) is a powerful programming language that enables you to create dynamically interacting websites. It allows you to implement complex features on web pages, making them more engaging and responsive to user actions. It's the language that brings your static HTML and CSS to life!</p>
                 
-                <h2>Key Concepts for Beginners</h2>
-                
-                <h3>1. Variables and Data Types</h3>
-                <ul>
-                    <li><strong>Variables:</strong> Containers for storing data values. Declared using <code>var</code>, <code>let</code>, or <code>const</code>.</li>
-                    <li><strong>Data Types:</strong> JavaScript handles various types of data, including numbers, strings (text), booleans (true/false), arrays (lists), and objects (collections of key-value pairs).</li>
-                </ul>
-
                 <div class="embed-responsive embed-responsive-16by9 mb-4">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/c-I5S_zTwAc?si=FMsRAy9zanA0JrJS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="embed-responsive-item"></iframe>
                 </div>
 
-                <h3>2. Functions</h3>
-                <p>Functions are blocks of code designed to perform a particular task. They are reusable and help organize your code.</p>
-                <pre><code>function greet(name) {
+                <h2>Key Concepts for Beginners</h2>
+                
+                <h3>1. Variables and Data Types: Storing Information</h3>
+                <p>Variables are like containers that hold information. In JavaScript, you can declare variables using <code>var</code>, <code>let</code>, or <code>const</code>, each with slightly different behaviors regarding scope and reassignability.</p>
+                <ul>
+                    <li><strong><code>var</code>:</strong> Oldest way, function-scoped. Can be re-declared and updated.</li>
+                    <li><strong><code>let</code>:</strong> Block-scoped. Can be updated but not re-declared.</li>
+                    <li><strong><code>const</code>:</strong> Block-scoped. Cannot be re-declared or updated (constant).</li>
+                </ul>
+                <p><strong>Common Data Types:</strong></p>
+                <ul>
+                    <li><strong>Numbers:</strong> <code>10</code>, <code>3.14</code></li>
+                    <li><strong>Strings:</strong> <code>"Hello World"</code>, <code>'JavaScript'</code> (text)</li>
+                    <li><strong>Booleans:</strong> <code>true</code>, <code>false</code> (logical values)</li>
+                    <li><strong>Arrays:</strong> <code>[1, 2, 3]</code> (ordered lists of values)</li>
+                    <li><strong>Objects:</strong> <code>{ name: "John", age: 30 }</code> (collections of key-value pairs)</li>
+                    <li><strong>Undefined:</strong> A variable that has been declared but not yet assigned a value.</li>
+                    <li><strong>Null:</strong> Represents the intentional absence of any object value.</li>
+                </ul>
+                <p><strong>Example:</strong></p>
+                <pre><code>let message = "Hello";
+const PI = 3.14159;
+let count = 0;
+count = 1; // This is allowed for 'let'
+// PI = 3.0; // This would cause an error for 'const'</code></pre>
+
+                <h3>2. Functions: Reusable Blocks of Code</h3>
+                <p>Functions are fundamental to JavaScript. They allow you to group a set of statements to perform a specific task, and then reuse that code whenever needed, promoting efficiency and organization.</p>
+                <pre><code>// Function Declaration
+function greet(name) {
     return "Hello, " + name + "!";
 }
-console.log(greet("World")); // Output: Hello, World!
-</code></pre>
 
-                <h3>3. The Document Object Model (DOM)</h3>
-                <p>The DOM is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. JavaScript interacts with the DOM to manipulate the webpage.</p>
+// Function Expression
+const sayGoodbye = function(name) {
+    return "Goodbye, " + name + ".";
+};
+
+// Arrow Function (ES6+)
+const add = (a, b) => a + b;
+
+console.log(greet("Alice")); // Output: Hello, Alice!
+console.log(sayGoodbye("Bob")); // Output: Goodbye, Bob.
+console.log(add(5, 3)); // Output: 8</code></pre>
+
+                <h3>3. The Document Object Model (DOM): Interacting with HTML</h3>
+                <p>The DOM is a programming interface for web documents. It represents the page as a tree-like structure of objects, allowing JavaScript to access and manipulate the document's structure, style, and content.</p>
                 <ul>
-                    <li><strong>Selecting Elements:</strong> Using methods like <code>document.getElementById()</code>, <code>document.querySelector()</code>, <code>document.querySelectorAll()</code>.</li>
-                    <li><strong>Modifying Content:</strong> Changing text (<code>innerText</code>, <code>innerHTML</code>) or attributes.</li>
-                    <li><strong>Event Handling:</strong> Responding to user actions like clicks (<code>addEventListener('click', ...)</code>).</li>
+                    <li><strong>Selecting Elements:</strong> Finding specific HTML elements to work with.
+                        <ul>
+                            <li><code>document.getElementById('myId')</code>: Selects an element by its unique ID.</li>
+                            <li><code>document.querySelector('.myClass')</code>: Selects the first element that matches a CSS selector.</li>
+                            <li><code>document.querySelectorAll('p')</code>: Selects all elements that match a CSS selector.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Modifying Content:</strong> Changing the text or HTML within an element.
+                        <ul>
+                            <li><code>element.innerText</code>: Gets or sets the text content of an element.</li>
+                            <li><code>element.innerHTML</code>: Gets or sets the HTML content of an element.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Event Handling:</strong> Making your page respond to user actions (like clicks, key presses, form submissions).
+                        <ul>
+                            <li><code>element.addEventListener('event', function)</code>: Attaches an event handler function to an element.</li>
+                        </ul>
+                    </li>
                 </ul>
+                <p><strong>Example (DOM Manipulation):</strong></p>
+                <pre><code>&lt;button id="myButton"&gt;Click Me&lt;/button&gt;
+&lt;p id="myParagraph"&gt;Original text.&lt;/p&gt;
 
-                <h3>4. Basic Control Flow</h3>
+&lt;script&gt;
+    const button = document.getElementById('myButton');
+    const paragraph = document.getElementById('myParagraph');
+
+    button.addEventListener('click', function() {
+        paragraph.innerText = "Text changed!";
+    });
+&lt;/script&gt;</code></pre>
+
+                <h3>4. Control Flow: Making Decisions and Repeating Actions</h3>
+                <p>Control flow statements allow you to execute different blocks of code based on conditions or to repeat code multiple times.</p>
                 <ul>
-                    <li><strong>Conditional Statements:</strong> <code>if</code>, <code>else if</code>, <code>else</code> for making decisions.</li>
-                    <li><strong>Loops:</strong> <code>for</code>, <code>while</code> for repeating actions.</li>
+                    <li><strong>Conditional Statements:</strong>
+                        <ul>
+                            <li><code>if</code>, <code>else if</code>, <code>else</code>: Executes code based on whether a condition is true or false.</li>
+                            <li><code>switch</code>: Evaluates an expression and executes code based on matching cases.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Loops:</strong>
+                        <ul>
+                            <li><code>for</code>: Repeats a block of code a specific number of times.</li>
+                            <li><code>while</code>: Repeats a block of code as long as a specified condition is true.</li>
+                            <li><code>forEach</code> (for arrays): Executes a provided function once for each array element.</li>
+                        </ul>
+                    </li>
                 </ul>
+                <p><strong>Example (Conditional):</strong></p>
+                <pre><code>let age = 18;
+if (age >= 18) {
+    console.log("You are an adult.");
+} else {
+    console.log("You are a minor.");
+}</code></pre>
 
-                <a href="index.html" class="btn btn-primary mt-4">Back to Home</a>
+                <div class="d-flex justify-content-start mt-4">
+                    <a href="post-css.html" class="btn btn-primary">&larr; Previous: CSS</a>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="index.html" class="btn btn-primary">Back to Home</a>
+                </div>
             </div>
 
             <!-- Sidebar -->
@@ -82,9 +162,31 @@ console.log(greet("World")); // Output: Hello, World!
                     <div class="card-body">
                         <h5 class="card-title">Additional JavaScript Resources</h5>
                         <ul class="list-unstyled">
-                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs: JavaScript</a></li>
-                            <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript Tutorial</a></li>
-                            <li><a href="https://javascript.info/" target="_blank">The Modern JavaScript Tutorial</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs: JavaScript (Official Documentation)</a></li>
+                            <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript Tutorial (Beginner-Friendly)</a></li>
+                            <li><a href="https://javascript.info/" target="_blank">The Modern JavaScript Tutorial (In-depth)</a></li>
+                            <li><a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank">freeCodeCamp: JavaScript Algorithms and Data Structures</a></li>
+                            <li><a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">Codecademy: Introduction to JavaScript (Interactive)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Project-Based Resources</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></li>
+                            <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Recommended Tools</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://code.visualstudio.com/" target="_blank">VS Code (Code Editor)</a></li>
+                            <li><a href="https://developer.chrome.com/docs/devtools/" target="_blank">Browser Developer Tools</a></li>
+                            <li><a href="https://git-scm.com/downloads" target="_blank">Git (Version Control)</a></li>
+                            <li><a href="https://nodejs.org/en/download/" target="_blank">Node.js (for npm/package management)</a></li>
                         </ul>
                     </div>
                 </div>

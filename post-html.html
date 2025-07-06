@@ -21,10 +21,10 @@
                         <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -39,50 +39,97 @@
                 <h1>Understanding HTML: The Web's Foundation</h1>
                 <p class="lead">HTML (HyperText Markup Language) is the backbone of every webpage. It provides the structure and meaning to your content, allowing browsers to display text, images, and other media in a readable format. Think of it as the blueprint of a house.</p>
                 
-                <h2>Key Concepts for Beginners</h2>
-                
-                <h3>1. Elements, Tags, and Attributes</h3>
-                <ul>
-                    <li><strong>Elements:</strong> The fundamental building blocks of HTML. They define the type of content, like a paragraph, heading, or image.</li>
-                    <li><strong>Tags:</strong> Used to create elements. Most elements have an opening tag (e.g., <code>&lt;p&gt;</code>) and a closing tag (e.g., <code>&lt;/p&gt;</code>). Some are self-closing (e.g., <code>&lt;img&gt;</code>).</li>
-                    <li><strong>Attributes:</strong> Provide additional information about an element. They are placed inside the opening tag (e.g., <code>&lt;a href="link.html"&gt;</code>).</li>
-                </ul>
-
                 <div class="embed-responsive embed-responsive-16by9 mb-4">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/salY_Sm6mv4?si=sMe-V8GT-tf9X-w0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="embed-responsive-item"></iframe>
                 </div>
 
-                <h3>2. Basic Document Structure</h3>
-                <p>Every HTML page follows a basic structure:</p>
+                <h2>Key Concepts for Beginners</h2>
+                
+                <h3>1. Elements, Tags, and Attributes: The Building Blocks</h3>
+                <p>HTML is made up of elements, which are defined by tags. Tags tell the browser how to display the content. Attributes provide extra information about elements.</p>
+                <ul>
+                    <li><strong>Elements:</strong> The fundamental components of an HTML page. Examples include paragraphs (<code>&lt;p&gt;</code>), headings (<code>&lt;h1&gt;</code>), images (<code>&lt;img&gt;</code>), and links (<code>&lt;a&gt;</code>).</li>
+                    <li><strong>Tags:</strong> Used to mark the beginning and end of an element. Most elements have an opening tag (e.g., <code>&lt;p&gt;</code>) and a closing tag (e.g., <code>&lt;/p&gt;</code>). Some tags are self-closing (e.g., <code>&lt;img&gt;</code>, <code>&lt;br&gt;</code>).</li>
+                    <li><strong>Attributes:</strong> Provide additional information about an element. They are always specified in the opening tag and usually come in name/value pairs like <code>name="value"</code>. For example, <code>&lt;a href="link.html"&gt;</code> where <code>href</code> is the attribute and <code>"link.html"</code> is its value.</li>
+                </ul>
+                <p><strong>Example:</strong></p>
+                <pre><code>&lt;p class="intro"&gt;This is a paragraph.&lt;/p&gt;
+&lt;img src="image.jpg" alt="A descriptive image"&gt;</code></pre>
+
+                <h3>2. Basic Document Structure: The HTML Skeleton</h3>
+                <p>Every HTML page needs a basic structure to be valid and properly rendered by browsers. This structure includes the document type declaration, the root HTML element, and the head and body sections.</p>
                 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;title&gt;My Webpage Title&lt;/title&gt;
+    &lt;!-- Links to CSS, favicons, etc. go here --&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;!-- Your content goes here --&gt;
+    &lt;!-- All visible content of your webpage goes here --&gt;
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
                 <ul>
-                    <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type.</li>
-                    <li><code>&lt;html&gt;</code>: The root element of an HTML page.</li>
-                    <li><code>&lt;head&gt;</code>: Contains meta-information about the HTML page (not displayed on the page).</li>
-                    <li><code>&lt;body&gt;</code>: Contains the visible page content.</li>
+                    <li><code>&lt;!DOCTYPE html&gt;</code>: This declaration defines that this document is an HTML5 document.</li>
+                    <li><code>&lt;html lang="en"&gt;</code>: The root element of an HTML page. The <code>lang="en"</code> attribute specifies the language of the document, which is good for accessibility and search engines.</li>
+                    <li><code>&lt;head&gt;</code>: Contains meta-information about the HTML document. This content is *not* displayed on the web page itself but provides important data for the browser and search engines (e.g., character set, viewport settings, page title, links to stylesheets, scripts).</li>
+                    <li><code>&lt;body&gt;</code>: Contains all the visible contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
                 </ul>
 
-                <h3>3. Common HTML Tags You'll Use</h3>
+                <h3>3. Semantic HTML: Giving Meaning to Your Content</h3>
+                <p>Semantic HTML elements clearly describe their meaning to both the browser and the developer. Using semantic tags helps with accessibility, SEO, and makes your code easier to understand and maintain.</p>
                 <ul>
-                    <li><strong>Headings:</strong> <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> (<code>&lt;h1&gt;</code> is most important).</li>
-                    <li><strong>Paragraphs:</strong> <code>&lt;p&gt;</code> for blocks of text.</li>
-                    <li><strong>Links:</strong> <code>&lt;a href="url"&gt;Link Text&lt;/a&gt;</code> to connect to other pages or resources.</li>
-                    <li><strong>Images:</strong> <code>&lt;img src="image.jpg" alt="Description"&gt;</code> to embed images.</li>
-                    <li><strong>Lists:</strong> <code>&lt;ul&gt;</code> (unordered) and <code>&lt;ol&gt;</code> (ordered) with <code>&lt;li&gt;</code> for list items.</li>
-                    <li><strong>Divisions:</strong> <code>&lt;div&gt;</code> for grouping content, often used with CSS for layout.</li>
+                    <li><code>&lt;header&gt;</code>: Represents introductory content, usually containing a group of navigational aids or introductory headings.</li>
+                    <li><code>&lt;nav&gt;</code>: Defines a set of navigation links.</li>
+                    <li><code>&lt;main&gt;</code>: Represents the dominant content of the <code>&lt;body&gt;</code>.</li>
+                    <li><code>&lt;article&gt;</code>: Represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., a blog post, a forum post).</li>
+                    <li><code>&lt;section&gt;</code>: Represents a standalone section of content, which doesn't have a more specific semantic element to represent it.</li>
+                    <li><code>&lt;aside&gt;</code>: Represents a portion of a document whose content is only indirectly related to the document's main content (e.g., sidebars, pull quotes).</li>
+                    <li><code>&lt;footer&gt;</code>: Represents a footer for its nearest sectioning content or sectioning root element.</li>
+                </ul>
+                <p><strong>Why use them?</strong> Instead of just using <code>&lt;div&gt;</code> everywhere, semantic tags tell the browser and assistive technologies what kind of content is inside, improving structure and understanding.</p>
+
+                <h3>4. Common HTML Tags You'll Use Frequently</h3>
+                <p>Beyond the basic structure, you'll frequently use these tags to build out your content:</p>
+                <ul>
+                    <li><strong>Text:</strong>
+                        <ul>
+                            <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings (<code>&lt;h1&gt;</code> is most important, <code>&lt;h6&gt;</code> least).</li>
+                            <li><code>&lt;p&gt;</code>: Paragraphs for blocks of text.</li>
+                            <li><code>&lt;strong&gt;</code>: For important text (usually bold).</li>
+                            <li><code>&lt;em&gt;</code>: For emphasized text (usually italic).</li>
+                            <li><code>&lt;br&gt;</code>: Line break (self-closing).</li>
+                            <li><code>&lt;hr&gt;</code>: Horizontal rule (self-closing), for thematic breaks.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Links & Images:</strong>
+                        <ul>
+                            <li><code>&lt;a href="url"&gt;Link Text&lt;/a&gt;</code>: Hyperlinks to other pages or resources.</li>
+                            <li><code>&lt;img src="image.jpg" alt="Description"&gt;</code>: Embeds an image. <code>alt</code> text is crucial for accessibility.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Lists:</strong>
+                        <ul>
+                            <li><code>&lt;ul&gt;</code>: Unordered list (bullet points).</li>
+                            <li><code>&lt;ol&gt;</code>: Ordered list (numbered list).</li>
+                            <li><code>&lt;li&gt;</code>: List item (used inside <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code>).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Grouping Content:</strong>
+                        <ul>
+                            <li><code>&lt;div&gt;</code>: A generic container for flow content. Used when no other semantic element is appropriate.</li>
+                            <li><code>&lt;span&gt;</code>: An inline container for phrasing content. Used when no other semantic element is appropriate.</li>
+                        </ul>
+                    </li>
                 </ul>
 
-                <a href="index.html" class="btn btn-primary mt-4">Back to Home</a>
+                <div class="d-flex justify-content-end mt-4">
+                    <a href="post-css.html" class="btn btn-primary">Next: CSS &rarr;</a>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="index.html" class="btn btn-primary">Back to Home</a>
+                </div>
             </div>
 
             <!-- Sidebar -->
@@ -91,9 +138,31 @@
                     <div class="card-body">
                         <h5 class="card-title">Additional HTML Resources</h5>
                         <ul class="list-unstyled">
-                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs: HTML</a></li>
-                            <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a></li>
-                            <li><a href="https://html.com/" target="_blank">HTML.com</a></li>
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs: HTML (Official Documentation)</a></li>
+                            <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial (Beginner-Friendly)</a></li>
+                            <li><a href="https://html.com/" target="_blank">HTML.com (Comprehensive Guides)</a></li>
+                            <li><a href="https://www.freecodecamp.org/learn/responsive-web-design/basic-html-and-html5/" target="_blank">freeCodeCamp: Basic HTML and HTML5</a></li>
+                            <li><a href="https://www.codecademy.com/learn/learn-html" target="_blank">Codecademy: Learn HTML (Interactive)</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Project-Based Resources</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a></li>
+                            <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card bg-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Recommended Tools</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://code.visualstudio.com/" target="_blank">VS Code (Code Editor)</a></li>
+                            <li><a href="https://developer.chrome.com/docs/devtools/" target="_blank">Browser Developer Tools</a></li>
+                            <li><a href="https://git-scm.com/downloads" target="_blank">Git (Version Control)</a></li>
+                            <li><a href="https://nodejs.org/en/download/" target="_blank">Node.js (for npm/package management)</a></li>
                         </ul>
                     </div>
                 </div>

@@ -56,6 +56,15 @@ header.bg-light {
     color: #334464; /* Dark text for sidebar card title */
 }
 
+/* Blog Post Main Content Background */
+.col-md-8 {
+    background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='3' cy='3' r='2' fill='%23334464' opacity='0.05'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-color: #ddd8ce; /* Ensure a base color */
+    padding: 20px; /* Add some padding for content */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
 /* Button Styling */
 .btn-primary {
     background-color: #7234fa;
