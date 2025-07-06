@@ -20,13 +20,19 @@ As this is a static website, there are no build or development server commands. 
 - **Body Text:** Lato (from Google Fonts)
 
 ### Background Graphics
-- **Hero Section:** Subtle tech-inspired SVG pattern (embedded in CSS)
+- **Hero Section (Homepage, About, Contact):** Subtle tech-inspired SVG pattern (embedded in CSS)
+- **Blog Post Main Content:** Subtle code/learning-themed SVG pattern (embedded in CSS)
 
 ## Content Structure
+- **Homepage:** Features a refined hero section with a clear call-to-action button ("Start Learning Now").
 - **Blog Post Pages:** Each post features a main content area (8 columns) and a sidebar (4 columns) for additional resources.
   - **HTML Blog Post:** Expanded content with deeper explanations, practical code examples, introduction to semantic HTML, and a wider range of external resources.
   - **CSS Blog Post:** Expanded content covering selectors, box model, Flexbox, Grid, and common properties, with practical examples and resources.
   - **JavaScript Blog Post:** Expanded content on variables, data types, functions, DOM manipulation, and control flow, with practical examples and resources.
+  - **Navigation:** "Next" and "Previous" links added for cohesive learning path.
+  - **Sidebar Cards:**
+    - "Project-Based Resources" card (e.g., The Odin Project, freeCodeCamp).
+    - "Recommended Tools" card (e.g., VS Code, Browser Dev Tools, Git, Node.js).
 
 ## Global Elements
 - **Navigation Bar:** Consistent across all pages, includes Home, About, and Contact links.
