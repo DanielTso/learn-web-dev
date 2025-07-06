@@ -20,7 +20,7 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
 
 /* Override Bootstrap's default dark background */
 .bg-dark {
-    background-color: #222222 !important;
+    background-color: #334464 !important; /* More vibrant dark blue-gray */
 }
 
 /* Hero Section Styling */
