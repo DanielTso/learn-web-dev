@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding HTML</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">DevBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Main Blog Content -->
+            <div class="col-md-8">
+                <h1>Understanding HTML: The Web's Foundation</h1>
+                <p class="lead">HTML (HyperText Markup Language) is the backbone of every webpage. It provides the structure and meaning to your content, allowing browsers to display text, images, and other media in a readable format. Think of it as the blueprint of a house.</p>
+                
+                <h2>Key Concepts for Beginners</h2>
+                
+                <h3>1. Elements, Tags, and Attributes</h3>
+                <ul>
+                    <li><strong>Elements:</strong> The fundamental building blocks of HTML. They define the type of content, like a paragraph, heading, or image.</li>
+                    <li><strong>Tags:</strong> Used to create elements. Most elements have an opening tag (e.g., <code>&lt;p&gt;</code>) and a closing tag (e.g., <code>&lt;/p&gt;</code>). Some are self-closing (e.g., <code>&lt;img&gt;</code>).</li>
+                    <li><strong>Attributes:</strong> Provide additional information about an element. They are placed inside the opening tag (e.g., <code>&lt;a href="link.html"&gt;</code>).</li>
+                </ul>
+
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/salY_Sm6mv4?si=sMe-V8GT-tf9X-w0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="embed-responsive-item"></iframe>
+                </div>
+
+                <h3>2. Basic Document Structure</h3>
+                <p>Every HTML page follows a basic structure:</p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- Your content goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <ul>
+                    <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type.</li>
+                    <li><code>&lt;html&gt;</code>: The root element of an HTML page.</li>
+                    <li><code>&lt;head&gt;</code>: Contains meta-information about the HTML page (not displayed on the page).</li>
+                    <li><code>&lt;body&gt;</code>: Contains the visible page content.</li>
+                </ul>
+
+                <h3>3. Common HTML Tags You'll Use</h3>
+                <ul>
+                    <li><strong>Headings:</strong> <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> (<code>&lt;h1&gt;</code> is most important).</li>
+                    <li><strong>Paragraphs:</strong> <code>&lt;p&gt;</code> for blocks of text.</li>
+                    <li><strong>Links:</strong> <code>&lt;a href="url"&gt;Link Text&lt;/a&gt;</code> to connect to other pages or resources.</li>
+                    <li><strong>Images:</strong> <code>&lt;img src="image.jpg" alt="Description"&gt;</code> to embed images.</li>
+                    <li><strong>Lists:</strong> <code>&lt;ul&gt;</code> (unordered) and <code>&lt;ol&gt;</code> (ordered) with <code>&lt;li&gt;</code> for list items.</li>
+                    <li><strong>Divisions:</strong> <code>&lt;div&gt;</code> for grouping content, often used with CSS for layout.</li>
+                </ul>
+
+                <a href="index.html" class="btn btn-primary mt-4">Back to Home</a>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <div class="card bg-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Additional HTML Resources</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs: HTML</a></li>
+                            <li><a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML Tutorial</a></li>
+                            <li><a href="https://html.com/" target="_blank">HTML.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 DevBlog. All Rights Reserved.</p>
+        <p class="small">Disclaimer: This website is for educational purposes only and does not provide professional advice.</p>
+    </footer>
+</body>
+</html>

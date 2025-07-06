@@ -1,0 +1,85 @@
+/* Custom Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #ddd8ce;
+    color: #334464;
+}
+
+/* Use Poppins for headings */
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Bold for headings */
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Override Bootstrap's default dark background */
+.bg-dark {
+    background-color: #222222 !important;
+}
+
+/* Hero Section Styling */
+header.bg-light {
+    background-color: transparent !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3E%3Crect fill='%23ddd8ce' width='100' height='100'/%3E%3Cg fill='%23334464' opacity='0.1'%3E%3Ccircle cx='0' cy='0' r='50'/%3E%3Ccircle cx='100' cy='100' r='50'/%3E%3Ccircle cx='0' cy='100' r='50'/%3E%3Ccircle cx='100' cy='0' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card Styling */
+.card {
+    background-color: #312f36;
+    color: #ddd8ce;
+    border: none; /* Remove default border */
+}
+
+.card-title {
+    color: #ffffff; /* Make title stand out a bit more than card text */
+}
+
+.card-body a {
+    color: #7234fa; /* Make links in card bodies readable */
+}
+
+/* Specific styling for sidebar card */
+.col-md-4 .card {
+    background-color: #f8f9fa; /* Light background for sidebar card */
+    color: #334464; /* Dark text for sidebar card */
+}
+
+.col-md-4 .card-title {
+    color: #334464; /* Dark text for sidebar card title */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #7234fa;
+    border-color: #7234fa;
+    color: #ffffff !important; /* Ensure text is white and visible, overriding other rules */
+}
+
+.btn-primary:hover {
+    background-color: #5a28c7; /* A slightly darker shade for hover */
+    border-color: #5a28c7;
+    color: #ffffff !important; /* Keep text white on hover for better contrast */
+}
+
+/* Footer text color */
+footer.text-white p {
+    color: #ddd8ce !important;
+}
+
+/* Footer Styling */
+footer {
+    text-align: right; /* Align content to the right */
+    padding-top: 20px; /* Add some space above the footer */
+}
+
+body {
+    margin-bottom: 0; /* Remove margin for fixed footer */
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Steps in JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">DevBlog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- Main Blog Content -->
+            <div class="col-md-8">
+                <h1>First Steps in JavaScript: Adding Interactivity</h1>
+                <p class="lead">JavaScript (JS) is a powerful programming language that enables you to create dynamically interacting websites. It allows you to implement complex features on web pages, making them more engaging and responsive to user actions.</p>
+                
+                <h2>Key Concepts for Beginners</h2>
+                
+                <h3>1. Variables and Data Types</h3>
+                <ul>
+                    <li><strong>Variables:</strong> Containers for storing data values. Declared using <code>var</code>, <code>let</code>, or <code>const</code>.</li>
+                    <li><strong>Data Types:</strong> JavaScript handles various types of data, including numbers, strings (text), booleans (true/false), arrays (lists), and objects (collections of key-value pairs).</li>
+                </ul>
+
+                <div class="embed-responsive embed-responsive-16by9 mb-4">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/c-I5S_zTwAc?si=FMsRAy9zanA0JrJS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="embed-responsive-item"></iframe>
+                </div>
+
+                <h3>2. Functions</h3>
+                <p>Functions are blocks of code designed to perform a particular task. They are reusable and help organize your code.</p>
+                <pre><code>function greet(name) {
+    return "Hello, " + name + "!";
+}
+console.log(greet("World")); // Output: Hello, World!
+</code></pre>
+
+                <h3>3. The Document Object Model (DOM)</h3>
+                <p>The DOM is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. JavaScript interacts with the DOM to manipulate the webpage.</p>
+                <ul>
+                    <li><strong>Selecting Elements:</strong> Using methods like <code>document.getElementById()</code>, <code>document.querySelector()</code>, <code>document.querySelectorAll()</code>.</li>
+                    <li><strong>Modifying Content:</strong> Changing text (<code>innerText</code>, <code>innerHTML</code>) or attributes.</li>
+                    <li><strong>Event Handling:</strong> Responding to user actions like clicks (<code>addEventListener('click', ...)</code>).</li>
+                </ul>
+
+                <h3>4. Basic Control Flow</h3>
+                <ul>
+                    <li><strong>Conditional Statements:</strong> <code>if</code>, <code>else if</code>, <code>else</code> for making decisions.</li>
+                    <li><strong>Loops:</strong> <code>for</code>, <code>while</code> for repeating actions.</li>
+                </ul>
+
+                <a href="index.html" class="btn btn-primary mt-4">Back to Home</a>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <div class="card bg-light mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Additional JavaScript Resources</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN Web Docs: JavaScript</a></li>
+                            <li><a href="https://www.w3schools.com/js/" target="_blank">W3Schools JavaScript Tutorial</a></li>
+                            <li><a href="https://javascript.info/" target="_blank">The Modern JavaScript Tutorial</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 DevBlog. All Rights Reserved.</p>
+        <p class="small">Disclaimer: This website is for educational purposes only and does not provide professional advice.</p>
+    </footer>
+</body>
+</html>
