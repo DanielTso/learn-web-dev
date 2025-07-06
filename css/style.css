@@ -1,6 +1,14 @@
 /* Custom Styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@700&family=Press+Start+2P&display=swap');
+
+#learn-web-dev-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2em; /* Adjust as needed */
+    color: #7234fa; /* Primary accent color */
+    display: block; /* Ensure it takes its own line */
+    margin-bottom: 5px; /* Space between title and tagline */
+}
 
 body {
     font-family: 'Lato', sans-serif;
