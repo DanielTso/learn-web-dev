@@ -52,13 +52,51 @@
 
     <!-- Main Content -->
     <main class="container my-5">
-        <p>You can reach us via email at: <a href="mailto:info@devblog.com">info@devblog.com</a></p>
-        <p>Or connect with us on social media:</p>
-        <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">LinkedIn</a></li>
-        </ul>
-        <p>We aim to respond to all inquiries within 24-48 hours.</p>
+        <div class="row justify-content-center">
+            <!-- Contact Form Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Send Us a Message</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Your message here..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Connect With Us</h5>
+                    </div>
+                    <div class="card-body">
+                        <p>We'd love to connect with you on social media!</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#" class="btn btn-outline-primary w-100 text-start"><i class="fab fa-twitter me-2"></i> Twitter</a></li>
+                            <li class="mb-2"><a href="#" class="btn btn-outline-primary w-100 text-start"><i class="fab fa-linkedin me-2"></i> LinkedIn</a></li>
+                            <li class="mb-2"><a href="#" class="btn btn-outline-primary w-100 text-start"><i class="fab fa-github me-2"></i> GitHub</a></li>
+                            <li class="mb-2"><a href="mailto:info@devblog.com" class="btn btn-outline-primary w-100 text-start"><i class="fas fa-envelope me-2"></i> Email Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
