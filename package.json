@@ -1,0 +1,25 @@
+{
+  "name": "learnwebdev",
+  "version": "1.0.0",
+  "description": "LearnWebDev - A beginner-friendly educational website for learning front-end web development",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "cleancss -o css/style.css css/style.source.css",
+    "dev": "live-server --port=8080 --open=index.html",
+    "build": "npm run build:css"
+  },
+  "keywords": [
+    "education",
+    "web-development",
+    "html",
+    "css",
+    "javascript",
+    "tutorial"
+  ],
+  "author": "LearnWebDev",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "live-server": "^1.2.2"
+  }
+}

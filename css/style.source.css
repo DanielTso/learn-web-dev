@@ -1,0 +1,139 @@
+/* ============================================
+   LEARNWEBDEV STYLESHEET
+   ============================================
+
+   Design System:
+   - Primary Accent: #7234fa (purple - buttons, links, branding)
+   - Hover Accent: #5a28c7 (darker purple)
+   - Dark Backgrounds: #334464 (navbar, footer)
+   - Secondary Dark: #312f36 (card backgrounds)
+   - Main Background: #ddd8ce (warm beige)
+   - Text Color: #334464 (dark blue-gray)
+
+   Typography:
+   - Headings: Poppins (bold, 700)
+   - Body: Lato (regular 400, bold 700)
+   - Brand: Press Start 2P (retro gaming font)
+   ============================================ */
+
+/* ============================================
+   FONT IMPORTS
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@700&family=Press+Start+2P&display=swap');
+
+/* ============================================
+   BRANDING
+   ============================================ */
+#learn-web-dev-text {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2em;
+    color: #7234fa;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #ddd8ce;
+    color: #334464;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+h1, h2, h3, h4, h5, h6, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.bg-dark {
+    background-color: #334464 !important;
+}
+
+/* ============================================
+   HERO/HEADER SECTIONS
+   ============================================ */
+header.bg-light {
+    background-color: transparent !important;
+    /* Subtle tech-inspired SVG pattern with circles */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 100'%3E%3Crect fill='%23ddd8ce' width='100' height='100'/%3E%3Cg fill='%23334464' opacity='0.1'%3E%3Ccircle cx='0' cy='0' r='50'/%3E%3Ccircle cx='100' cy='100' r='50'/%3E%3Ccircle cx='0' cy='100' r='50'/%3E%3Ccircle cx='100' cy='0' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+}
+
+/* ============================================
+   CARDS
+   ============================================ */
+
+/* Default card styling (for blog post sidebars) */
+.card {
+    background-color: #312f36;
+    color: #ddd8ce;
+    border: none;
+}
+
+.card-title {
+    color: #ffffff;
+}
+
+.card-body a {
+    color: #7234fa;
+}
+
+/* Homepage cards (light background) */
+.col-md-4 .card {
+    background-color: #f8f9fa;
+    color: #334464;
+}
+
+.col-md-4 .card-title {
+    color: #334464;
+}
+
+/* Blog post main content area (8 columns) */
+.col-md-8 {
+    /* Subtle code/learning-themed dotted pattern */
+    background-image: url("data:image/svg+xml,%3Csvg width='100%25' height='100%25' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='3' cy='3' r='2' fill='%23334464' opacity='0.05'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-color: #ddd8ce;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* ============================================
+   BUTTONS
+   ============================================ */
+.btn-primary {
+    background-color: #7234fa;
+    border-color: #7234fa;
+    color: #ffffff !important;
+}
+
+.btn-primary:hover {
+    background-color: #5a28c7;
+    border-color: #5a28c7;
+    color: #ffffff !important;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+footer.text-white p {
+    color: #ddd8ce !important;
+}
+
+footer {
+    text-align: right;
+    padding-top: 20px;
+}
