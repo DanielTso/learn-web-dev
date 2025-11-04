@@ -3,75 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Dev Blog</title>
+    <title>LearnWebDev - Master Web Development Step by Step</title>
+    <meta name="description" content="Learn HTML, CSS, and JavaScript with interactive tutorials, code playgrounds, and practical projects. Start your web development journey today!">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NWFH1G2VXN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-NWFH1G2VXN');
-</script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NWFH1G2VXN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-NWFH1G2VXN');
+    </script>
 </head>
 <body>
-
     <!-- Navigation Bar -->
     <div id="navbar-mount"></div>
 
     <!-- Hero Section -->
-    <header class="bg-light text-center py-5">
+    <section class="hero-section">
         <div class="container">
-            <h1 class="display-4">Your Journey into Web Development Starts Here.</h1>
-            <p class="lead">Learn HTML, CSS, and JavaScript with beginner-friendly guides and practical examples.</p>
-            <a href="post-html.html" class="btn btn-primary btn-lg mt-3">Start Learning Now</a>
+            <div class="hero-content">
+                <span class="hero-badge">🎓 100% Free to Learn</span>
+                <h1 class="hero-title">
+                    Master Web Development<br>
+                    <span class="gradient-text">One Step at a Time</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Build real projects. Learn by doing. Launch your career.
+                </p>
+                <div class="hero-cta">
+                    <a href="#learning-paths" class="btn btn-primary">Start Learning Free</a>
+                    <a href="pathway.html" class="btn btn-secondary">View Learning Path</a>
+                </div>
+                <div class="hero-social-proof">
+                    <div class="hero-avatars">
+                        <div class="hero-avatar">JS</div>
+                        <div class="hero-avatar">CS</div>
+                        <div class="hero-avatar">HT</div>
+                        <div class="hero-avatar">+</div>
+                    </div>
+                    <span>Join 500+ students learning today</span>
+                </div>
+            </div>
         </div>
-    </header>
+    </section>
 
-    <!-- Main Content -->
-    <main class="container my-5">
-        <div class="row">
-            <!-- Blog Post 1 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Understanding HTML</h5>
-                        <p class="card-text">The foundational structure of all websites. Here's what I've learned about elements, tags, and attributes.</p>
-                        <a href="post-html.html" class="btn btn-primary">Read More</a>
-                    </div>
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>3</h3>
+                    <p>Free Courses</p>
                 </div>
-            </div>
-            <!-- Blog Post 2 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">The Power of CSS</h5>
-                        <p class="card-text">How to make your websites look great with selectors, properties, and the box model.</p>
-                        <a href="post-css.html" class="btn btn-primary">Read More</a>
-                    </div>
+                <div class="stat-item">
+                    <h3>24/7</h3>
+                    <p>Learn Anytime</p>
                 </div>
-            </div>
-            <!-- Blog Post 3 -->
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">First Steps in JavaScript</h5>
-                        <p class="card-text">Bringing interactivity to the page with variables, functions, and DOM manipulation.</p>
-                        <a href="post-js.html" class="btn btn-primary">Read More</a>
-                    </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Practical Projects</p>
+                </div>
+                <div class="stat-item">
+                    <h3>∞</h3>
+                    <p>Career Opportunities</p>
                 </div>
             </div>
         </div>
-    </main>
+    </section>
+
+    <!-- Learning Paths Section -->
+    <section id="learning-paths" class="section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Choose Your Learning Path</h2>
+            <div class="learning-cards">
+                <!-- HTML Card -->
+                <div class="learning-card">
+                    <div class="card-icon">📄</div>
+                    <h3 class="card-title">HTML Fundamentals</h3>
+                    <p class="card-text">Master the structure of web pages with HTML. Learn tags, attributes, semantic HTML, and best practices.</p>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="background: #E5E7EB; height: 8px; border-radius: 999px; overflow: hidden;">
+                            <div class="progress-bar" style="width: 0%; height: 100%; background: linear-gradient(135deg, #6366F1 0%, #EC4899 100%); transition: width 0.5s ease;"></div>
+                        </div>
+                        <p class="progress-text" style="margin-top: 0.5rem; font-size: 0.9rem; color: #6B7280;">Not started</p>
+                    </div>
+                    <a href="post-html.html" class="btn btn-gradient" style="width: 100%; text-align: center;">Start Learning</a>
+                </div>
+
+                <!-- CSS Card -->
+                <div class="learning-card">
+                    <div class="card-icon">🎨</div>
+                    <h3 class="card-title">CSS Styling</h3>
+                    <p class="card-text">Bring your pages to life with CSS. Learn selectors, layouts, animations, and responsive design techniques.</p>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="background: #E5E7EB; height: 8px; border-radius: 999px; overflow: hidden;">
+                            <div class="progress-bar" style="width: 0%; height: 100%; background: linear-gradient(135deg, #6366F1 0%, #EC4899 100%); transition: width 0.5s ease;"></div>
+                        </div>
+                        <p class="progress-text" style="margin-top: 0.5rem; font-size: 0.9rem; color: #6B7280;">Not started</p>
+                    </div>
+                    <a href="post-css.html" class="btn btn-gradient" style="width: 100%; text-align: center;">Start Learning</a>
+                </div>
+
+                <!-- JavaScript Card -->
+                <div class="learning-card">
+                    <div class="card-icon">⚡</div>
+                    <h3 class="card-title">JavaScript Interactivity</h3>
+                    <p class="card-text">Add dynamic behavior to your sites. Learn variables, functions, DOM manipulation, and modern ES6+ features.</p>
+                    <div style="margin: 1.5rem 0;">
+                        <div style="background: #E5E7EB; height: 8px; border-radius: 999px; overflow: hidden;">
+                            <div class="progress-bar" style="width: 0%; height: 100%; background: linear-gradient(135deg, #6366F1 0%, #EC4899 100%); transition: width 0.5s ease;"></div>
+                        </div>
+                        <p class="progress-text" style="margin-top: 0.5rem; font-size: 0.9rem; color: #6B7280;">Not started</p>
+                    </div>
+                    <a href="post-js.html" class="btn btn-gradient" style="width: 100%; text-align: center;">Start Learning</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Playground Section -->
+    <section class="section" style="background: var(--color-bg-alt);">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 1rem;">Try It Yourself</h2>
+            <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: 3rem; font-size: 1.1rem;">
+                Write code and see results instantly. No setup required!
+            </p>
+
+            <div class="code-playground">
+                <div class="playground-header">
+                    <div class="playground-tabs">
+                        <button class="playground-tab active" data-tab="html">HTML</button>
+                        <button class="playground-tab" data-tab="css">CSS</button>
+                        <button class="playground-tab" data-tab="js">JS</button>
+                    </div>
+                    <div>
+                        <button class="btn btn-gradient btn-sm run-code" style="padding: 0.5rem 1rem; font-size: 0.9rem; margin-right: 0.5rem;">▶ Run</button>
+                        <button class="btn btn-secondary btn-sm reset-code" style="padding: 0.5rem 1rem; font-size: 0.9rem; background: transparent; color: var(--color-text); border: 1px solid var(--color-border);">↻ Reset</button>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 1rem;">
+                    <div>
+                        <div class="editor-pane html-pane">
+                            <textarea class="code-editor html-editor" placeholder="Write HTML here..."></textarea>
+                        </div>
+                        <div class="editor-pane css-pane" style="display: none;">
+                            <textarea class="code-editor css-editor" placeholder="Write CSS here..."></textarea>
+                        </div>
+                        <div class="editor-pane js-pane" style="display: none;">
+                            <textarea class="code-editor js-editor" placeholder="Write JavaScript here..."></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="code-preview"></div>
+                    </div>
+                </div>
+
+                <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--color-text-secondary); text-align: center;">
+                    💡 Tip: Press <code>Ctrl/Cmd + Enter</code> to run your code
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Why Learn With Us?</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🎯</div>
+                    <h4>Beginner-Friendly</h4>
+                    <p>No prior experience needed. We start from the absolute basics and build up progressively.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💻</div>
+                    <h4>Interactive Learning</h4>
+                    <p>Try code examples in real-time with our built-in code playground. Learn by doing, not just reading.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🚀</div>
+                    <h4>Build Real Projects</h4>
+                    <p>Apply your skills to practical projects that you can showcase in your portfolio.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">📈</div>
+                    <h4>Track Progress</h4>
+                    <p>See your learning journey with automatic progress tracking for each course.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-align: center; padding: 4rem 0;">
+        <div class="container">
+            <h2 style="color: white; margin-bottom: 1rem;">Ready to Start Your Journey?</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem; color: rgba(255,255,255,0.9);">
+                Join thousands of students learning web development today.
+            </p>
+            <a href="post-html.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 1rem 2.5rem;">Begin with HTML</a>
+        </div>
+    </section>
 
     <!-- Footer -->
     <div id="footer-mount"></div>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <script src="components/navbar.js"></script>
     <script src="components/footer.js"></script>
+    <script src="components/code-playground.js"></script>
     <script src="js/script.js"></script>
     <script>
         // Initialize components
