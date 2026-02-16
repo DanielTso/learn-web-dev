@@ -97,7 +97,7 @@ function initProgressTracking() {
  */
 function updateProgressIndicators(progress) {
     // Calculate overall progress
-    const totalPages = ['post-html.html', 'post-css.html', 'post-js.html'];
+    const totalPages = ['post-html.html', 'post-css.html', 'post-js.html', 'post-react.html'];
     const completedPages = totalPages.filter(page => progress[page]?.visited).length;
     const overallProgress = Math.round((completedPages / totalPages.length) * 100);
 
