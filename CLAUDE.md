@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-LearnWebDev is a static educational website for learning front-end web development. It teaches HTML, CSS, and JavaScript through beginner-friendly guides with interactive code playgrounds. The site uses vanilla HTML, CSS, and JavaScript with Bootstrap 5.3.7 for responsive layouts.
+LearnWebDev is a static educational website for learning front-end web development. It teaches HTML, CSS, JavaScript, and React through beginner-friendly guides with interactive code playgrounds. The site uses vanilla HTML, CSS, and JavaScript with Bootstrap 5.3.7 for responsive layouts.
 
 ## Development Workflow
 
@@ -37,11 +37,11 @@ Each HTML page has `<div id="navbar-mount"></div>` and `<div id="footer-mount"><
 
 ### Page Structure
 - `index.html` - Homepage with hero, learning cards, code playground (currentPage: `'home'`)
-- `pathway.html` - 9-stage learning roadmap (currentPage: `'pathway'`)
+- `pathway.html` - 10-stage learning roadmap (currentPage: `'pathway'`)
 - `tutorial.html` - VS Code setup guide (currentPage: `'tutorial'`)
 - `about.html` - About the site (currentPage: `'about'`)
 - `contact.html` - Contact form with validation (currentPage: `'contact'`)
-- `post-html.html`, `post-css.html`, `post-js.html` - Tutorial blog posts with 8-col main + 4-col sidebar layout (currentPage: `'home'`)
+- `post-html.html`, `post-css.html`, `post-js.html`, `post-react.html` - Tutorial blog posts with 8-col main + 4-col sidebar layout (currentPage: `'home'`)
 
 ### JavaScript Features (`js/script.js`)
 Loaded on every page. Includes:
