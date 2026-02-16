@@ -106,6 +106,7 @@ For each of the 8 HTML files:
 6. `post-html.html` (currentPage: 'home')
 7. `post-css.html` (currentPage: 'home')
 8. `post-js.html` (currentPage: 'home')
+9. `post-react.html` (currentPage: 'home')
 
 ## Phase 4: Analytics Consistency (15 min)
 
@@ -160,6 +161,7 @@ Add to `<head>` of pages missing analytics:
   - [ ] `post-html.html` - Blog layout, prev/next navigation
   - [ ] `post-css.html` - Blog layout, sidebar
   - [ ] `post-js.html` - Blog layout, code examples
+  - [ ] `post-react.html` - Blog layout, React tutorial content
 - [ ] Verify responsive behavior (resize browser to mobile width)
 - [ ] Check browser console for errors on each page
 - [ ] Verify all navbar links work
@@ -198,11 +200,11 @@ Major changes:
 - Extract navbar/footer into reusable JavaScript components
 - Add readable CSS source file (style.source.css) with comments
 - Implement npm build script for CSS minification
-- Add Google Analytics consistently across all 8 pages
+- Add Google Analytics consistently across all pages
 - Create comprehensive documentation (README, PRD, implementation plan)
 
 Technical improvements:
-- Reduced code duplication from 8 copies to 1 component
+- Reduced code duplication from 9 copies to 1 component
 - Added package.json with build tooling
 - Documented color palette and design system in CSS
 - Updated CLAUDE.md with new architecture

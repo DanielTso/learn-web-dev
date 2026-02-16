@@ -5,7 +5,7 @@ Refactor the LearnWebDev static website to improve maintainability and developer
 
 ## Problem Statement
 The current implementation suffers from:
-1. **High code duplication**: Navbar and footer HTML is duplicated across 8 separate pages, making updates error-prone and time-consuming
+1. **High code duplication**: Navbar and footer HTML is duplicated across 9 separate pages, making updates error-prone and time-consuming
 2. **Maintainability issues**: CSS is minified without a source file, making style updates difficult
 3. **Inconsistent implementation**: Google Analytics is only present on 2 of 8 pages
 4. **No development workflow**: No tooling for CSS minification or code quality checks

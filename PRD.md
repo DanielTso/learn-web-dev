@@ -14,7 +14,7 @@ This refactor addresses code maintainability and developer experience improvemen
 
 **Requirement**: Extract navbar and footer into reusable JavaScript components
 
-**User Story**: As a developer, I want to update the navbar in one place so that changes propagate to all 8 pages automatically.
+**User Story**: As a developer, I want to update the navbar in one place so that changes propagate to all 9 pages automatically.
 
 **Acceptance Criteria**:
 - Create `components/navbar.js` that generates navbar HTML
@@ -55,7 +55,7 @@ This refactor addresses code maintainability and developer experience improvemen
 **User Story**: As a site owner, I want analytics on all pages so that I can understand user behavior across the entire site.
 
 **Acceptance Criteria**:
-- All 8 HTML pages include identical Google Analytics code
+- All 9 HTML pages include identical Google Analytics code
 - Analytics ID (G-NWFH1G2VXN) remains unchanged
 - Tracking script loads before any page content
 
@@ -96,7 +96,7 @@ This refactor addresses code maintainability and developer experience improvemen
 ## 3. Non-Requirements
 
 **Explicitly out of scope**:
-- Framework migration (React, Vue, etc.)
+- Framework migration (Vue, Angular, etc.)
 - TypeScript conversion
 - Backend/API integration
 - Design system changes
@@ -119,7 +119,7 @@ learn-web-dev/
 ├── js/
 │   └── script.js       # Contact form logic
 ├── images/
-├── *.html              # 8 HTML pages (modified)
+├── *.html              # 9 HTML pages (including post-react.html)
 ├── package.json        # New: build scripts
 ├── CLAUDE.md          # Updated
 └── README.md          # New or updated
@@ -158,7 +158,7 @@ learn-web-dev/
 ## 7. Testing Plan
 
 ### 7.1 Manual Testing
-- [ ] Load each of 8 pages in browser
+- [ ] Load each of 9 pages in browser
 - [ ] Verify navbar renders correctly on each page
 - [ ] Verify footer renders correctly on each page
 - [ ] Verify active page highlighting works
